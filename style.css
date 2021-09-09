@@ -45,7 +45,7 @@ html {
 
 
 /* setting default format for the page */
-body {
+.custom-body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   margin-left: 0;
@@ -91,7 +91,7 @@ button:hover {
 }
 
 /* setting a background to the login container */
-.container {
+.custom-container {
   background-color: white;
   opacity: 1;
   padding: 16px;
