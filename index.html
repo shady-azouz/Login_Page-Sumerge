@@ -2,42 +2,49 @@
 <html lang="en">
   <head>
     <title>Login Page</title>
-    <link href="style.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body class="custom-body">
-  <div class="split left">
-    <div class="centered">
-      <img src="burger.png" alt="burger">
-      <h1 class="title">Azouz's Kitchen</h1>
-    </div>
-  </div>
-  <div class="split right">
-    <div class="centered">
-      <form action="items.html" method="POST">
-        <div class="custom-container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" minlength="3" name="uname" required pattern="[a-zA-Z0-9]+">
-    
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" minlength="8" maxlength="15" name="psw" required>
-                
-            <button type="submit">Login</button>
-            <label>
-            <input type="checkbox" name="remember"> Remember me
-            </label>
+    <div class="container-fluid" style="height: 100%; width: 100%;">
+      <div class="row" style="height: 100%;">
+        <div class="col-md-6 col-sm-12 left no-margin">
+          <div>
+            <img class="img-fluid" src="burger.png" alt="burger" style="max-width: 100%;">
+            <h1 class="title">Azouz's Kitchen</h1>
+          </div>
         </div>
-    
-        <div class="custom-container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <a href="#" style="float: right; padding-top: 16px;">Forgot password?</a>
+        <div class="col-md-6 col-sm-12 right no-margin">
+          <form class="centered" action="items.html" method="POST">
+            <div class="custom-container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" minlength="3" name="uname" required pattern="[a-zA-Z0-9]+">
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" minlength="8" maxlength="15" name="psw" required>
+                    
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="custom-container" style="background-color:#f1f1f1">
+              <div class="row">
+                <div class="col-sm-6">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                </div>
+                <div class="col-sm-6">
+                  <a href="#" style="float: right; padding-top: 16px;">Forgot password?</a>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-        </form>
+      </div>
     </div>
-  </div>
 </body>
 </html>
