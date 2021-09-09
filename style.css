@@ -139,7 +139,7 @@ button:hover {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  min-width: 600px;
+  min-width: 400px;
 }
 
 /* Setting the format of the table's head row */
