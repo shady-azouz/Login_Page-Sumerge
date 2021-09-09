@@ -9,6 +9,10 @@
   padding-top: 20px;
 }
 
+html {
+  height: 100%;
+}
+
 /* creating components on the left of the split screen */
 .left {
   background-color: rgb(253, 253, 163);
@@ -38,9 +42,15 @@
   text-align: center;
 }
 
+
+
 /* setting default format for the page */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
   background-color: rgb(253, 253, 163);   
 }
 
@@ -85,4 +95,67 @@ button:hover {
   background-color: white;
   opacity: 1;
   padding: 16px;
+}
+
+
+/* ---- adding css for items page --- */
+
+
+/* modifying the format of the title text */
+.items-title {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* modifying the formato of the subtitle text */
+.items-subtitle {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* setting up an image as the background of the header */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("restaurant.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Setting the format of the table  */
+.content-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 600px;
+}
+
+/* Setting the format of the table's head row */
+.content-table thead tr{
+  background-color: #009879;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th, .content-table td{
+  padding: 12px 15px;
+}
+
+/* setting bottom borders to each row in the body of the table */
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Setting a white background to table's body */
+.content-table tbody tr:nth-of-type(even) {
+  background-color: 1px solid #f3f3f3;
+}
+
+/* setting a green bottom most border to the table dynamically */
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
 }
